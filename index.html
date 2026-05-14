@@ -1,25 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>J.And.E Solutions</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.And.E Solutions | General Construction Bay Area</title>
+
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
       color: #222;
     }
 
     header {
       background: #111;
       color: white;
-      padding: 40px;
+      padding: 60px 20px;
       text-align: center;
     }
 
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .cta-buttons {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .call {
+      background: #28a745;
+      color: white;
+    }
+
+    .quote {
+      background: #007bff;
+      color: white;
+    }
+
     section {
-      padding: 40px;
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
     }
 
     .services {
@@ -32,6 +74,15 @@
       background: white;
       padding: 20px;
       border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .contact-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
     footer {
@@ -41,11 +92,19 @@
       padding: 20px;
     }
 
+    input, textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
     button {
+      padding: 12px 20px;
       background: black;
       color: white;
       border: none;
-      padding: 15px 25px;
       border-radius: 5px;
       cursor: pointer;
     }
@@ -56,8 +115,13 @@
 
 <header>
   <h1>J.And.E Solutions</h1>
-  <p>Licensed & Bonded General Construction</p>
+  <p>Licensed & Bonded General Construction | Bay Area</p>
   <p>License #1128412</p>
+
+  <div class="cta-buttons">
+    <a class="btn call" href="tel:5105080216">📞 Call Now</a>
+    <a class="btn quote" href="#quote">Request Quote</a>
+  </div>
 </header>
 
 <section>
@@ -74,26 +138,28 @@
 </section>
 
 <section>
-  <h2>About Us</h2>
-
-  <p>
-    J.And.E Solutions proudly serves the Bay Area, Santa Cruz,
-    and Monterey with professional construction, remodel,
-    maintenance, and repair services.
-  </p>
+  <h2>Why Choose Us</h2>
+  <div class="card">
+    Reliable, licensed construction services across the Bay Area.
+    We focus on quality work, clear communication, and fast response times.
+  </div>
 </section>
 
-<section>
-  <h2>Contact</h2>
+<section id="quote">
+  <h2>Request a Quote</h2>
 
-  <p>Phone: 510-508-0216</p>
-  <p>Email: j.and.esolutions77@gmail.com</p>
-
-  <button>Request a Quote</button>
+  <div class="contact-box">
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="text" placeholder="Phone Number" required><br>
+      <textarea rows="5" placeholder="Describe your project"></textarea><br>
+      <button type="submit">Send Request</button>
+    </form>
+  </div>
 </section>
 
 <footer>
-  © 2026 J.And.E Solutions
+  © 2026 J.And.E Solutions | Bay Area Construction
 </footer>
 
 </body>
