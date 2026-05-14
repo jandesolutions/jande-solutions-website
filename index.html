@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>J.And.E Solutions | General Construction Bay Area</title>
+  <meta name="description" content="J.And.E Solutions provides residential remodels, commercial construction, ADU builds, and industrial maintenance across the Bay Area." />
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f6f6f6;
+      background: #f4f4f4;
       color: #222;
     }
 
     header {
-      background: #111;
+      background: linear-gradient(135deg, #111, #333);
       color: white;
-      padding: 60px 20px;
       text-align: center;
+      padding: 70px 20px;
     }
 
     header h1 {
-      font-size: 42px;
+      font-size: 44px;
       margin-bottom: 10px;
     }
 
     header p {
       font-size: 18px;
+      margin: 5px 0;
       opacity: 0.9;
     }
 
-    .cta-buttons {
+    .buttons {
       margin-top: 20px;
     }
 
@@ -54,9 +56,9 @@
     }
 
     section {
-      padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
+      padding: 50px 20px;
     }
 
     h2 {
@@ -64,7 +66,7 @@
       margin-bottom: 30px;
     }
 
-    .services {
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
@@ -75,21 +77,23 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      text-align: center;
     }
 
-    .contact-box {
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .contact {
       background: white;
       padding: 30px;
       border-radius: 10px;
-      text-align: center;
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-
-    footer {
-      background: #111;
-      color: white;
       text-align: center;
-      padding: 20px;
     }
 
     input, textarea {
@@ -108,6 +112,14 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 
@@ -115,19 +127,18 @@
 
 <header>
   <h1>J.And.E Solutions</h1>
-  <p>Licensed & Bonded General Construction | Bay Area</p>
+  <p>Licensed & Bonded General Contractor | Bay Area</p>
   <p>License #1128412</p>
 
-  <div class="cta-buttons">
+  <div class="buttons">
     <a class="btn call" href="tel:5105080216">📞 Call Now</a>
-    <a class="btn quote" href="#quote">Request Quote</a>
+    <a class="btn quote" href="#quote">Request a Quote</a>
   </div>
 </header>
 
 <section>
   <h2>Our Services</h2>
-
-  <div class="services">
+  <div class="grid">
     <div class="card">Residential Remodels</div>
     <div class="card">Commercial Construction</div>
     <div class="card">Industrial Maintenance</div>
@@ -138,21 +149,42 @@
 </section>
 
 <section>
+  <h2>Recent Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471" />
+      Kitchen Remodel
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6" />
+      Bathroom Renovation
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" />
+      Commercial Buildout
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae" />
+      Exterior Work
+    </div>
+  </div>
+</section>
+
+<section>
   <h2>Why Choose Us</h2>
   <div class="card">
-    Reliable, licensed construction services across the Bay Area.
-    We focus on quality work, clear communication, and fast response times.
+    Reliable, licensed construction services across the Bay Area. We focus on quality craftsmanship, clear communication, and fast turnaround times.
   </div>
 </section>
 
 <section id="quote">
   <h2>Request a Quote</h2>
-
-  <div class="contact-box">
+  <div class="contact">
     <form>
-      <input type="text" placeholder="Your Name" required><br>
-      <input type="text" placeholder="Phone Number" required><br>
-      <textarea rows="5" placeholder="Describe your project"></textarea><br>
+      <input type="text" placeholder="Name" required />
+      <input type="text" placeholder="Phone" required />
+      <textarea rows="5" placeholder="Describe your project"></textarea>
+      <br />
       <button type="submit">Send Request</button>
     </form>
   </div>
